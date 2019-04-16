@@ -10,6 +10,7 @@ from torch.autograd import Variable
 # Data Normalization - channel=（channel-mean）/std
 normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 # Data augmetation
+# May need to advise path
 train_data = datasets.ImageFolder('/Users/nbsword/Desktop/AlexNet/training',
                          transforms.Compose([
                              transforms.Scale(256),
