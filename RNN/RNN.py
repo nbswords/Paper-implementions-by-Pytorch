@@ -71,9 +71,7 @@ class RNNModel(nn.Module):
 input_dim = 28
 output_dim = 10
 model = RNNModel(input_dim, output_dim)
-In [73]:
 cost_fun = nn.CrossEntropyLoss()
-In [74]:
 lr = 0.1
 opt = torch.optim.SGD(model.parameters(), lr = lr)
 iters = 0
